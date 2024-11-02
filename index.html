@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Personl Details</legend>
+        <br>
+        <form action="your-submission-Link" method="post">
+        <!-- Name Fields -->
+         <label for = "firstname">First Name :</label>
+         <input type="text" id="firstname" name="firstname" required><br><br>
+        
+         <label for="middlename">Middle Name :</label>
+         <input type="text" id="middlename" name="middlename"><br><br>
+
+         <label for="Lastname">Last Name :</label>
+         <input type="text" name="Lastname" id="Lastname" required><br><br>
+         
+        <!--  Selection of courses -->
+          <label for="courses">Course :</label>
+          <select name="courses" name="courses" required>
+                <option value="" disabled selected>Courses</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.tech</option>
+                <option value="BSC">BSC</option>
+                <option value="MCA">MCA</option>
+          </select><br><br>
+
+        <!-- Gender Selection -->
+            Gender :
+            <br>
+            <label><input type="radio" name="Gender" value="male"required>Male</label>
+            <br><label><input type="radio" name="Gender" value="female">Female</label>
+            <br><label><input type="radio" name="Gender" value="other">Others</label>
+            <br><br>
+            
+        <!-- Birth Date  -->
+          <label for="dob">Date of Birth :</label>
+          <input type="datetime-local" id="dob" name="dob" required><br>
+          <br>
+
+        <!--phone number  -->
+         <label for="phone">Phone</label>
+         <input type="tel" name="phone" id="phone" placeholder="+91" pattern="[0-9]{10}"required>
+         <br><br>
+
+        <!-- Address -->
+          <Label for="address">Address :</Label><br>
+          <textarea name="address" id="address" cols="80" rows="5" required></textarea>
+          <br><br>
+
+        <!--Email  -->
+          <label for="email">Email :</label>
+          <input type="email" name="email" id="email"required> <br><br>
+
+        <!-- Password -->
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required> <br><br>
+
+          <label for="reType-password">ReType-Password</label>
+          <input type="password" name="reType-password" id="reType-password" required><br><br>
+
+        <!-- Terms And Condition -->
+         <label> <input type="checkbox" name="Terms" required>I agree to the terms and conditions</label>
+
+        <!-- File Upload  -->
+         <label for="File">Choose File</label>
+         <input type="file" name="File" id="file"><br><br>
+
+        <!-- Color picker -->
+         <label for="Color">Choose Color</label>
+         <input type="color" id="color" name="color"><br><br>
+
+        <!-- submit button -->
+         <input type="button" value="Reset">
+         <input type="button" value="submit">
+        </form>
+    </fieldset>
+     
+</body>
+</html>
